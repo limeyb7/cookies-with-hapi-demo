@@ -8,6 +8,7 @@ This boilerplate provides the following:
 * A simple server, built with Hapi.js and Inert
 * Routes and handlers for the homepage ('/') and serving static files
 * A single view: index.html
+* A frontend JS file, ready to go
 * Basic SASS folder structure, compiling into one CSS file
 * A SASS file with CSS reset code
 * A testing folder with basic server tests in Tape
