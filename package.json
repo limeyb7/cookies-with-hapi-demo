@@ -1,0 +1,35 @@
+{
+  "name": "node-hapi-sass-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for projects using Node, Hapi.js and SASS.",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test/*",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msmichellegar/node-hapi-sass-boilerplate.git"
+  },
+  "keywords": [
+    "boilerplate",
+    "hapi",
+    "sass"
+  ],
+  "author": "msmichellegar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/msmichellegar/node-hapi-sass-boilerplate/issues"
+  },
+  "homepage": "https://github.com/msmichellegar/node-hapi-sass-boilerplate#readme",
+  "dependencies": {
+    "hapi": "^13.0.0",
+    "inert": "^3.2.0"
+  },
+  "devDependencies": {
+    "tape": "^4.5.1"
+  }
+}
