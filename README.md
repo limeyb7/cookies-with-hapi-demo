@@ -12,3 +12,4 @@ This boilerplate provides the following:
 * Basic SASS folder structure, compiling into one CSS file
 * A SASS file with CSS reset code
 * A testing folder with basic server tests in Tape
+* Scripts for testing and running SASS
