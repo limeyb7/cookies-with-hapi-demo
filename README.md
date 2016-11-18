@@ -1,4 +1,4 @@
-# Quick demo of how to implement cookies with hapi
+# Quick demo of how to implement cookies with hapi 🍪 🍪 🍪
 
 ## How to run on your machine
 
