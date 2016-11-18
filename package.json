@@ -1,7 +1,7 @@
 {
-  "name": "node-hapi-sass-boilerplate",
+  "name": "cookies-project",
   "version": "1.0.0",
-  "description": "Boilerplate for projects using Node, Hapi.js and SASS.",
+  "description": "demonstrating-cookies-with-hapi",
   "main": "server.js",
   "directories": {
     "test": "test"
@@ -20,7 +20,7 @@
     "hapi",
     "sass"
   ],
-  "author": "msmichellegar",
+  "author": "emily and tom",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/msmichellegar/node-hapi-sass-boilerplate/issues"

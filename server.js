@@ -9,11 +9,23 @@ server.register(Inert, function () {
         port: process.env.PORT || 8080
     });
 
+    server.state('nameCookie', {
+      ttl: 360000,
+      isSecure: false,
+      isHttpOnly: false,
+      encoding: 'base64json',
+      clearInvalid: false,
+      strictHeader: true,
+      path: "/"
+    });
+
     server.route(routes);
 
     server.start(function() {
         console.log('Server running at: ' + server.info.uri + '!');
     });
 });
+
+
 
 module.exports = server;
