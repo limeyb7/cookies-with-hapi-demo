@@ -76,4 +76,4 @@ This is similar in principle to Last-Modified, but using an arbitrary token rath
 
 ### TL;DR
 
-Look at the (Hapi tutorial)[http://hapijs.com/tutorials/caching].
+Look at the Hapi tutorial: http://hapijs.com/tutorials/caching
