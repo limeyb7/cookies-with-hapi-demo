@@ -15,7 +15,7 @@
 
 ## How does this work?
 
-We used hapi's own [cookies tutorial](http://hapijs.com/tutorials/cookies) to get our cookies set up. The "empty" is created in the server.js file. 
+We used hapi's own [cookies tutorial](http://hapijs.com/tutorials/cookies) to get our cookies set up. The "empty" cookie is first created when starting up the server (see server.js). 
 
 ```
     server.state('nameCookie', {
