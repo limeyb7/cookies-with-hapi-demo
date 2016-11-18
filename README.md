@@ -42,3 +42,38 @@ The different paths are defined in routes.js.
 ## Things we learnt
 
 The hapi tutorial recommends setting 'isSecure' and 'isHttpOnly' to true. However, because we are serving up our files within a local environment, this didn't work for us and so we needed to set both values to false.
+
+# Caching
+
+[This Google tutorial](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching) covers caching in-depth. Details of implementing it in Hapi are (here)[http://hapijs.com/tutorials/caching].
+
+Key points to bear in mind are:
+
+### Cache-Control
+
+The Cache-Control HTTP header tells the browser how to handle caching of the resources your server is providing. You control this using the `config` object in your Hapi route definition:
+
+```js
+config: {
+    cache: {
+        expiresIn: 30 * 1000,
+        privacy: 'private'
+    }
+}
+```
+This tells the browser to cache it for 30 seconds and tells intermediate servers, such as proxies, not to cache it.
+
+### Last-Modified
+
+If you use Inert to serve static content, it will automatically add a header saying when the content was last modified. The browser when it makes a request will ask the server whether the content has changed since that date, saving the server from resending all the material if it hasn't changed. This is all handled for you by Inert, but if you want to do the same without (e.g. dynamic content), you can add the 'Last-Modified' header with a timestamp e.g.:
+
+```
+reply(result).header('Last-Modified',lastModified.toUTCString());
+```
+### E-Tag
+
+This is similar in principle to Last-Modified, but using an arbitrary token rather than a timestamp.
+
+### TL;DR
+
+Look at the (Hapi tutorial)[http://hapijs.com/tutorials/caching].
